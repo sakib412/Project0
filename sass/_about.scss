@@ -1,0 +1,26 @@
+#about{
+    .about{
+        &__header{
+            padding: 2rem;
+            h1{
+                @extend %header;
+            }
+        }
+        &__content{
+            padding: 4rem;
+            img{
+                border-radius: 50%;
+                width: 15rem;
+                height: 15rem;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            p{
+                font-size: 1.9rem;
+                padding: 3rem 0;
+            }
+        }
+    }
+}

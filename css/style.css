@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.table-demo h1, section.services-area h1, #about .about__header h1 {
+  color: #e74c3c;
+  text-align: center;
+  margin: 4rem;
+  position: relative;
+  font-size: 4rem;
+  padding-bottom: 1rem; }
+  .table-demo h1::after, section.services-area h1::after, #about .about__header h1::after {
+    position: absolute;
+    transform: translateX(-100%);
+    bottom: 0;
+    content: "";
+    height: 2px;
+    background-color: #e74c3c; }
+
+.clearfix {
+  clear: both; }
+
+#header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .wrapper .logo {
+    font-size: 2.6rem;
+    font-weight: 600; }
+    .wrapper .logo a {
+      text-decoration: none;
+      color: #ecf0f1; }
+  .wrapper .header--menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .wrapper .header--menu ul li {
+      list-style: none; }
+      .wrapper .header--menu ul li a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: #e74c3c;
+        padding: 1.5rem 1.8rem;
+        transition: all .4s ease; }
+        .wrapper .header--menu ul li a:hover, .wrapper .header--menu ul li a.active {
+          color: #ecf0f1; }
+
+.hero__image {
+  background: linear-gradient(rgba(231, 77, 60, 0.699), #c03a2b7e), url(../img/hero.jpg);
+  height: 90vh;
+  background-size: cover;
+  width: 100%;
+  position: absolute; }
+
+.hero__content {
+  position: relative;
+  top: 0;
+  padding: 10rem 20rem; }
+  .hero__content h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: 1.5; }
+  .hero__content p {
+    font-size: 1.9rem;
+    color: #ecf0f1;
+    margin: 5rem 0;
+    margin-bottom: 15rem; }
+  .hero__content a {
+    padding: 1.8rem 2rem;
+    margin-top: 5rem;
+    background: #e74c3c;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    font-weight: 600; }
+    .hero__content a:hover {
+      background: #fff;
+      color: #e74c3c; }
+
+.table-demo {
+  position: relative;
+  top: 100px;
+  padding: 3rem 0;
+  background-color: #eee; }
+  .table-demo h1::after {
+    width: 24rem; }
+  .table-demo table {
+    font-size: 1.7rem;
+    width: 100%;
+    border: 2px solid #e74c3c; }
+    .table-demo table thead {
+      text-align: center; }
+      .table-demo table thead tr {
+        background-color: rgba(255, 241, 181, 0.452); }
+        .table-demo table thead tr th {
+          padding: 2rem;
+          color: #e74c3c;
+          border: 1px solid #e74c3c; }
+    .table-demo table tbody tr:nth-child(odd) {
+      background-color: #ccc; }
+    .table-demo table tbody tr td {
+      padding: 2rem;
+      border: 1px solid #e74c3c; }
+    .table-demo table tfoot tr td {
+      padding: 2rem;
+      border: 1px solid #e74c3c;
+      color: #c0392b; }
+
+section.services-area {
+  padding: 2rem;
+  margin-top: 12rem; }
+  section.services-area h1::after {
+    width: 33rem; }
+  section.services-area .single-services a {
+    text-decoration: none;
+    color: #e74c3c;
+    padding: 2rem 0;
+    transition: all .5s ease; }
+    section.services-area .single-services a:hover {
+      color: #c0392b; }
+    section.services-area .single-services a h4 {
+      text-align: center;
+      font-size: 1.8rem; }
+  section.services-area .single-services p {
+    font-size: 1.6rem;
+    padding: 1rem 0; }
+
+@media (max-width: 600px) {
+  .hero__content {
+    padding: 5rem; }
+    .hero__content h1 {
+      font-size: 4.5rem; }
+    .hero__content p {
+      margin-bottom: 2rem; } }
+
+@media (min-width: 601px) and (max-width: 779px) {
+  .hero__content {
+    padding: 6rem 10rem; }
+    .hero__content h1 {
+      font-size: 5rem; }
+    .hero__content p {
+      margin-bottom: 3.5rem; } }
+
+@media (min-width: 780px) and (max-width: 1240px) {
+  .hero__content {
+    padding: 10rem; }
+    .hero__content h1 {
+      font-size: 5rem; }
+    .hero__content p {
+      margin-bottom: 5rem; } }
+
+#about .about__header {
+  padding: 2rem; }
+
+#about .about__content {
+  padding: 4rem; }
+  #about .about__content img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #about .about__content p {
+    font-size: 1.9rem;
+    padding: 3rem 0; }
